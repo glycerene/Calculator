@@ -129,11 +129,11 @@ public class Main {
                     number += 5;
                     break;
                 case ('I'):
-                    if (operands.charAt(i+1) == 'X') {
+                    if ( i+1 < operands.length() && operands.charAt(i+1) == 'X') {
                         number += 9;
                         i++;
                     }
-                    else if (operands.charAt(i+1) == 'V'){
+                    else if ( i+1 < operands.length() && operands.charAt(i+1) == 'V'){
                         number += 4;
                         i++;
                     }
